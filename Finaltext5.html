@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Tổng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://thelugarconen.vn/api/file/images/Pages/B%E1%BA%A3n%20sao%20c%E1%BB%A7a%20IMG_20240108_161631.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(0, 123, 255, 0.8); 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-left h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 150px);
+        }
+
+        /* Tiêu đề "Chào mừng" với nền mờ phía sau */
+        h1.welcome {
+            font-size: 3rem; /* Tăng kích thước chữ */
+            font-weight: bold; /* Đậm hơn */
+            color: #fff; /* Màu trắng */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Đổ bóng nhẹ */
+            margin-bottom: 2rem;
+            text-transform: uppercase; /* Chữ in hoa */
+            white-space: nowrap; /* Ngăn không cho tiêu đề xuống dòng */
+            overflow: hidden; /* Ẩn phần vượt quá */
+            text-overflow: ellipsis; /* Hiển thị "..." nếu tiêu đề quá dài */
+            background-color: rgba(0, 0, 0, 0.4); /* Nền đen mờ */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .submenu {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 2rem;
+        }
+
+        .submenu a {
+            font-weight: bold; /* In đậm chữ */
+            color: #ffffff; /* Màu chữ trắng */
+            margin: 0 1rem;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 123, 255, 0.6); /* Nền màu xanh nhạt */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 22%;
+            text-align: center;
+        }
+
+        .submenu a:hover {
+            background-color: rgba(0, 123, 255, 1); /* Nền sáng lên khi hover */
+            color: #ffffff; /* Đảm bảo màu chữ vẫn rõ khi hover */
+            text-decoration: underline;
+        }
+
+        section {
+            display: none;
+            margin: 2rem auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+        }
+        section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* In đậm và thay đổi màu sắc cho các tiêu đề mục chi tiết */
+        section h1 {
+            font-weight: bold;
+            color: #007BFF; /* Màu xanh cho tiêu đề */
+        }
+
+        /* Thêm màu sắc nền cho các mục chi tiết khi hover */
+        section a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-left">
+            <h1>Trang Web Tổng</h1>
+        </div>
+        <div class="menu-right">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="Thanhvien.html">Thành viên</a>  <!-- Liên kết đến trang Thành viên -->
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="welcome">Chào mừng bạn đến với Trang Web Tổng Hợp về Cồn Én</h1>
+        <div class="submenu">
+            <a href="gioithieu.html">Giới thiệu</a> <!-- Liên kết đến trang Giới thiệu -->
+            <a href="danhgia1.html">Đánh giá</a> <!-- Liên kết đến trang Đánh giá -->
+            <a href="Anh.html">Hình ảnh</a> <!-- Liên kết đến trang Hình ảnh -->
+            <a href="video.html">Video</a>
+        </div>
+    </main>
+
+    <section id="about">
+        <h1>Giới thiệu</h1>
+        <p>Đây là trang giới thiệu về trang web của chúng tôi.</p>
+        <p>Hãy khám phá thông tin về khu du lịch Cồn Én dưới đây:</p>
+        <a href="gioithieu.html">Xem thêm về Cồn Én</a>
+    </section>
+
+    <section id="reviews">
+        <h1>Đánh giá</h1>
+        <p>Đọc những đánh giá từ khách hàng của chúng tôi.</p>
+    </section>
+
+    <section id="gallery">
+        <h1>Hình ảnh</h1>
+        <p>Thư viện hình ảnh đẹp mắt từ dự án của chúng tôi.</p>
+    </section>
+
+    <section id="videos">
+        <h1>Video</h1>
+        <p>Xem những video nổi bật của chúng tôi tại đây.</p>
+    </section>
+
+    <!-- Form đăng nhập -->
+    <section id="login">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </section>
+
+    <!-- Form đăng ký -->
+    <section id="signup">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Giới tính:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+
+            <label for="age">Tuổi:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                Tôi chấp nhận các <a href="#">điều khoản sử dụng</a>.
+            </label>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+
+        <div class="login-link">
+            <p>Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Tổng. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
